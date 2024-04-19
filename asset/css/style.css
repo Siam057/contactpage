@@ -1,0 +1,220 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    text-transform: none;
+    transition: all .2s linear;
+    font-family: "Poppins", sans-serif;
+}
+
+html,body{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section{
+    padding: 7rem 9%;
+}
+
+/* Hero Section Start */
+.hero{
+    background: rgba(0, 0, 0, 0.644) url(../image/background-image.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1{
+    margin-top: 20%;
+}
+
+/* responsive */
+@media(max-width: 568px){
+    .hero h1{
+        margin-top: 50%;
+    }
+}
+
+/* Countact Us Section Start */
+.countact{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+}
+.countact .title1 h5{
+    font-size: 2.1rem;
+    letter-spacing: 7px ;
+    font-weight: 400;
+    color: #726d67;
+    margin-bottom: 1rem;
+}
+
+.countact .title1 h2{
+    font-size: 3.5rem;
+    letter-spacing: 1px ;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.countact .send_box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.countact .send_box .inputs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.countact .send_box .inputs .User_input{
+    background: #f4f5f8;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: 2px solid white;
+}
+
+.countact .send_box .inputs .User_input:focus{
+    border: 2px solid #399aa7;
+    background: none;
+}
+
+.countact .send_box .text_box .User_text{
+    width: 100%;
+    height:200px ;
+    background: #f4f5f8;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border: 2px solid white;
+}
+
+.countact .send_box .text_box .User_text:focus{
+    border: 2px solid #399aa7   ;
+    background: none;
+}
+.buttone{
+    display: flex;
+    gap :2rem;
+}
+
+button{
+  padding: 1rem 2rem;  
+  border: 2px solid #bea27c;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-top: 2.5rem;
+  font-weight: 500;
+  color:#bea27c ;
+}
+
+button:focus{
+    background-color: #dbc6a8;
+    color: white;
+}
+
+.countact_details{
+    width: 90%;
+    height: 100%;
+}
+.countact_details .hedline_box h5{
+    font-size: 2.1rem;
+    letter-spacing: 7px ;
+    font-weight: 400;
+    color: #726d67;
+    margin-bottom: 1rem;
+}
+
+.countact_details .hedline_box h2{
+    font-size: 3.5rem;
+    letter-spacing: 1px ;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.countact_details .hedline_box p{
+    font-size: 1.5rem;
+    color: #726d67;
+    letter-spacing: 1px;
+}
+.countact_details .icon_div{
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+}
+.countact_details .icons{
+    display: flex;
+    gap: 2rem;
+}
+.countact_details .icons a i{
+    background: #bea27c;
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height:60px ;
+    color: white;
+}
+.countact_details .icons .info{
+    display: grid;
+    gap: 5px;
+}
+.countact_details .icons .info h1{
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+.countact_details .icons .info h4{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
+/* responsive */
+
+@media(max-width: 568px){
+    .countact .send_box .inputs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+        width: 100%;
+        margin: auto;
+    }
+
+    .countact{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+/* Google map section start */
+.googlemap{
+    width: 100%;
+    height: 100%;
+}
+.googlemap p iframe{
+    width: 100%;
+}
+
